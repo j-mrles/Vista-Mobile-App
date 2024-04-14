@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "588474215278",
+    "project_id": "vista-social-media-app",
+    "storage_bucket": "vista-social-media-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:588474215278:android:d5494d791e2f0474c1ef7f",
+        "android_client_info": {
+          "package_name": "com.example.vista_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAplAczvKe-YH9GpCKP7EoaPTadd3YZi0I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
