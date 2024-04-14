@@ -56,6 +56,5 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Your Name - [@yourtwitter](https://twitter.com/yourtwitter)
+Javier Morales - https://www.linkedin.com/in/jmrles/
 
-Project Link: [https://github.com/yourusername/vista](https://github.com/yourusername/vista)
