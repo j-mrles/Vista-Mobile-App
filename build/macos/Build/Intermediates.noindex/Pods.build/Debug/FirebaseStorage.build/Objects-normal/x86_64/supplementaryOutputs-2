@@ -1,0 +1,18 @@
+"/Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/FirebaseStorage/FirebaseStorage/Sources/StorageComponent.swift":
+  dependencies: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseStorage.build/Objects-normal/x86_64/StorageComponent.d"
+  object: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseStorage.build/Objects-normal/x86_64/StorageComponent.o"
+  swift-dependencies: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseStorage.build/Objects-normal/x86_64/StorageComponent.swiftdeps"
+  diagnostics: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseStorage.build/Objects-normal/x86_64/StorageComponent.dia"
+  const-values: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseStorage.build/Objects-normal/x86_64/StorageComponent.swiftconstvalues"
+"/Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/FirebaseStorage/FirebaseStorage/Sources/Internal/StorageDeleteTask.swift":
+  const-values: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseStorage.build/Objects-normal/x86_64/StorageDeleteTask.swiftconstvalues"
+  diagnostics: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseStorage.build/Objects-normal/x86_64/StorageDeleteTask.dia"
+  swift-dependencies: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseStorage.build/Objects-normal/x86_64/StorageDeleteTask.swiftdeps"
+  dependencies: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseStorage.build/Objects-normal/x86_64/StorageDeleteTask.d"
+  object: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseStorage.build/Objects-normal/x86_64/StorageDeleteTask.o"
+"/Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/FirebaseStorage/FirebaseStorage/Sources/StorageConstants.swift":
+  dependencies: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseStorage.build/Objects-normal/x86_64/StorageConstants.d"
+  object: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseStorage.build/Objects-normal/x86_64/StorageConstants.o"
+  swift-dependencies: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseStorage.build/Objects-normal/x86_64/StorageConstants.swiftdeps"
+  const-values: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseStorage.build/Objects-normal/x86_64/StorageConstants.swiftconstvalues"
+  diagnostics: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseStorage.build/Objects-normal/x86_64/StorageConstants.dia"

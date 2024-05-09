@@ -37,7 +37,18 @@ dependencies:
   cupertino_icons: ^1.0.2
   firebase_core: ^2.29.0
   firebase_auth: ^4.19.1
+  cloud_firestore: ^4.17.2
   # cloud_firestore: ^4.16.1  
+  geolocator: ^9.0.1 
+  shared_preferences: ^2.0.15 # check for the latest version on pub.dev
+  permission_handler: ^10.0.0
+  geocoding: ^2.0.0
+  shimmer: ^2.0.0
+  firebase_storage: ^11.7.0
+  image_picker: ^1.0.7
+  google_maps_flutter: ^2.1.1  # Add this line for Google Maps
+
+
 
 
 dev_dependencies:

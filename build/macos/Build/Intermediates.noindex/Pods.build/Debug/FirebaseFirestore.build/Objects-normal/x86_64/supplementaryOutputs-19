@@ -1,0 +1,18 @@
+"/Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/FirebaseFirestore/Firestore/Swift/Source/AsyncAwait/Firestore+AsyncAwait.swift":
+  diagnostics: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/x86_64/Firestore+AsyncAwait.dia"
+  dependencies: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/x86_64/Firestore+AsyncAwait.d"
+  object: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/x86_64/Firestore+AsyncAwait.o"
+  swift-dependencies: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/x86_64/Firestore+AsyncAwait.swiftdeps"
+  const-values: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/x86_64/Firestore+AsyncAwait.swiftconstvalues"
+"/Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/FirebaseFirestore/Firestore/Swift/Source/PropertyWrapper/FirestoreQuery.swift":
+  object: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/x86_64/FirestoreQuery.o"
+  dependencies: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/x86_64/FirestoreQuery.d"
+  const-values: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/x86_64/FirestoreQuery.swiftconstvalues"
+  diagnostics: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/x86_64/FirestoreQuery.dia"
+  swift-dependencies: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/x86_64/FirestoreQuery.swiftdeps"
+"/Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/FirebaseFirestore/Firestore/Swift/Source/PropertyWrapper/FirestoreQueryObservable.swift":
+  const-values: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/x86_64/FirestoreQueryObservable.swiftconstvalues"
+  swift-dependencies: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/x86_64/FirestoreQueryObservable.swiftdeps"
+  diagnostics: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/x86_64/FirestoreQueryObservable.dia"
+  object: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/x86_64/FirestoreQueryObservable.o"
+  dependencies: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/x86_64/FirestoreQueryObservable.d"

@@ -1,0 +1,18 @@
+"/Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/FirebaseFirestore/Firestore/Swift/Source/Codable/CodablePassThroughTypes.swift":
+  dependencies: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/x86_64/CodablePassThroughTypes.d"
+  const-values: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/x86_64/CodablePassThroughTypes.swiftconstvalues"
+  object: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/x86_64/CodablePassThroughTypes.o"
+  swift-dependencies: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/x86_64/CodablePassThroughTypes.swiftdeps"
+  diagnostics: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/x86_64/CodablePassThroughTypes.dia"
+"/Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/FirebaseFirestore/Firestore/Swift/Source/Codable/CodableErrors.swift":
+  const-values: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/x86_64/CodableErrors.swiftconstvalues"
+  object: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/x86_64/CodableErrors.o"
+  dependencies: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/x86_64/CodableErrors.d"
+  swift-dependencies: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/x86_64/CodableErrors.swiftdeps"
+  diagnostics: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/x86_64/CodableErrors.dia"
+"/Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/FirebaseFirestore/Firestore/Swift/Source/AsyncAwait/CollectionReference+AsyncAwait.swift":
+  object: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/x86_64/CollectionReference+AsyncAwait.o"
+  dependencies: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/x86_64/CollectionReference+AsyncAwait.d"
+  swift-dependencies: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/x86_64/CollectionReference+AsyncAwait.swiftdeps"
+  diagnostics: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/x86_64/CollectionReference+AsyncAwait.dia"
+  const-values: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseFirestore.build/Objects-normal/x86_64/CollectionReference+AsyncAwait.swiftconstvalues"

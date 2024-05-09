@@ -1,0 +1,18 @@
+"/Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/FirebaseStorage/FirebaseStorage/Sources/Internal/StoragePath.swift":
+  object: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseStorage.build/Objects-normal/x86_64/StoragePath.o"
+  const-values: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseStorage.build/Objects-normal/x86_64/StoragePath.swiftconstvalues"
+  diagnostics: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseStorage.build/Objects-normal/x86_64/StoragePath.dia"
+  dependencies: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseStorage.build/Objects-normal/x86_64/StoragePath.d"
+  swift-dependencies: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseStorage.build/Objects-normal/x86_64/StoragePath.swiftdeps"
+"/Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/FirebaseStorage/FirebaseStorage/Sources/StorageMetadata.swift":
+  object: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseStorage.build/Objects-normal/x86_64/StorageMetadata.o"
+  const-values: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseStorage.build/Objects-normal/x86_64/StorageMetadata.swiftconstvalues"
+  diagnostics: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseStorage.build/Objects-normal/x86_64/StorageMetadata.dia"
+  dependencies: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseStorage.build/Objects-normal/x86_64/StorageMetadata.d"
+  swift-dependencies: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseStorage.build/Objects-normal/x86_64/StorageMetadata.swiftdeps"
+"/Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/FirebaseStorage/FirebaseStorage/Sources/StorageObservableTask.swift":
+  dependencies: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseStorage.build/Objects-normal/x86_64/StorageObservableTask.d"
+  diagnostics: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseStorage.build/Objects-normal/x86_64/StorageObservableTask.dia"
+  object: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseStorage.build/Objects-normal/x86_64/StorageObservableTask.o"
+  swift-dependencies: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseStorage.build/Objects-normal/x86_64/StorageObservableTask.swiftdeps"
+  const-values: "/Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Intermediates.noindex/Pods.build/Debug/FirebaseStorage.build/Objects-normal/x86_64/StorageObservableTask.swiftconstvalues"

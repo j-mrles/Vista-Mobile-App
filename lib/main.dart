@@ -1,15 +1,16 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'firebase_options.dart';  
 import 'package:firebase_auth/firebase_auth.dart';
-import 'customdata.dart'; 
+import 'package:geolocator/geolocator.dart';
+
 import './about/about.dart';
 import './loading/loading.dart';
-import './authorization/login.dart';
-// import './search/search.dart';
+import './search/search.dart';
+import 'firebase_options.dart';
+
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized(); 
-  
+  WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
@@ -17,20 +18,107 @@ void main() async {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Vista: Social Media Hub',
+      theme: ThemeData.dark(),
       home: const LoadingScreen(),
       debugShowCheckedModeBanner: false,
+      routes: {
+        '/about': (context) => ProfileSettingsScreen(),
+        '/home': (context) => const HomeScreen(),
+        '/search': (context) => const SearchScreen(),
+      },
     );
   }
 }
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen();
+class HomeScreen extends StatefulWidget {
+  const HomeScreen({Key? key}) : super(key: key);
+
+  @override
+  _HomeScreenState createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  int _selectedIndex = 0;
+  bool _isPosting = false;
+  final TextEditingController _postController = TextEditingController();
+
+  @override
+  void initState() {
+    super.initState();
+    _determinePosition();
+  }
+
+  Future<void> _determinePosition() async {
+    bool serviceEnabled;
+    LocationPermission permission;
+
+    serviceEnabled = await Geolocator.isLocationServiceEnabled();
+    if (!serviceEnabled) {
+      return Future.error('Location services are disabled.');
+    }
+
+    permission = await Geolocator.checkPermission();
+    if (permission == LocationPermission.denied) {
+      permission = await Geolocator.requestPermission();
+      if (permission == LocationPermission.denied) {
+        return Future.error('Location permissions are denied');
+      }
+    }
+    
+    if (permission == LocationPermission.deniedForever) {
+      return Future.error('Location permissions are permanently denied, we cannot request permissions.');
+    } 
+
+    Position position = await Geolocator.getCurrentPosition();
+    print('Current Position: ${position.latitude}, ${position.longitude}');
+  }
+
+  void _onItemTapped(int index) {
+    setState(() {
+      _selectedIndex = index;
+    });
+
+    if (index == 2) {
+      Navigator.pushNamed(context, '/about');
+    } else if (index == 1) {
+      Navigator.pushNamed(context, '/search');
+    }
+  }
+
+  void _togglePostBar() {
+    setState(() {
+      _isPosting = !_isPosting;
+    });
+  }
+
+  void _submitData() async {
+    Position position = await Geolocator.getCurrentPosition(desiredAccuracy: LocationAccuracy.high);
+    String locationString = '${position.latitude}, ${position.longitude}';
+
+    FirebaseFirestore.instance.collection('people').add({
+      'first': FirebaseAuth.instance.currentUser?.email ?? '',
+      'last': '',
+      'post': _postController.text,
+      'location': locationString,
+    }).then((_) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('Post has been created successfully!'),
+          duration: Duration(seconds: 2),
+        )
+      );
+      _postController.clear();
+      _togglePostBar();
+    }).catchError((error) {
+      print("Error adding document: $error");
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -41,133 +129,110 @@ class HomeScreen extends StatelessWidget {
           children: <Widget>[
             Image.asset(
               'images/vista_logo.png',
-              height: 20.0,
+              height: 24.0,
             ),
             const SizedBox(width: 8),
+            Text(
+              'Vista',
+              style: TextStyle(
+                fontSize: 20.0,
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
           ],
         ),
         centerTitle: true,
-        backgroundColor: const Color.fromARGB(255, 0, 0, 0),
-        leading: IconButton(
-          icon: const Icon(Icons.account_circle, color: Colors.grey),
-          onPressed: () {
-            Navigator.push(context, MaterialPageRoute(builder: (context) => AboutScreen()));
-          },
-        ),
-        actions: [
-          TextButton(
-            onPressed: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context) => PostListScreen()));
-            },
-            child: const Text(
-              'History',
-              style: TextStyle(
-                color: Colors.white,
-              ),
-            ),
-          ),
-          IconButton(
-            icon: const Icon(Icons.search, color: Colors.white),
-            onPressed: () {},
-          ),
-        ],
+        backgroundColor: Colors.black,
       ),
-
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
+      body: Column(
+        children: [
+          if (_isPosting)
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text(
-                "Welcome ${FirebaseAuth.instance.currentUser?.email}",
-                style: const TextStyle(
-                  fontSize: 16,
-                  color: Colors.black,
+              child: TextFormField(
+                controller: _postController,
+                decoration: const InputDecoration(
+                  border: OutlineInputBorder(),
+                  labelText: 'What’s new? Let\'s add it',
+                  prefixIcon: Icon(Icons.edit),
                 ),
               ),
             ),
+          if (_isPosting)
             ElevatedButton(
-              onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) => AboutScreen()));
-              },
-              child: const Text("Go to About Screen"),
+              onPressed: _submitData,
+              child: const Text('Submit'),
             ),
-            ElevatedButton(
-              onPressed: () {
-                FirebaseAuth.instance.signOut();
-                Navigator.of(context).pushAndRemoveUntil(
-                    MaterialPageRoute(builder: (context) => const LoginScreen()),
-                    (route) => false);
+          const SizedBox(height: 20),
+          Expanded(
+            child: StreamBuilder<QuerySnapshot>(
+              stream: FirebaseFirestore.instance.collection('people').snapshots(),
+              builder: (BuildContext context, AsyncSnapshot<QuerySnapshot> snapshot) {
+                if (snapshot.hasError) {
+                  return const Text(
+                    'Something went wrong',
+                    style: TextStyle(fontSize: 16.0),
+                  );
+                }
+                if (snapshot.connectionState == ConnectionState.waiting) {
+                  return const Center(child: CircularProgressIndicator());
+                }
+                return ListView(
+                  children: snapshot.data!.docs.map((DocumentSnapshot document) {
+                    Map<String, dynamic> data = document.data()! as Map<String, dynamic>;
+                    return Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
+                      child: Card(
+                        elevation: 3.0,
+                        color: Colors.grey[900],
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(15.0),
+                        ),
+                        child: ListTile(
+                          title: Text(
+                            '${data['first']} ${data['last']}',
+                            style: const TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold, color: Colors.white),
+                          ),
+                          subtitle: Text(
+                            'Recent Post: ${data['post']} - Location: ${data['location']}',
+                            style: const TextStyle(fontSize: 16.0, color: Colors.white),
+                          ),
+                        ),
+                      ),
+                    );
+                  }).toList(),
+                );
               },
-              child: const Text("Logout"),
             ),
-          ],
-        ),
+          ),
+        ],
       ),
-      backgroundColor: Colors.white,
-    );
-  }
-}
-
-
-class PostListScreen extends StatelessWidget {
-  const PostListScreen({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text("Posts")),
-      backgroundColor: Colors.black,
-      body: ListView.builder(
-        padding: const EdgeInsets.all(16),
-        itemCount: posts.length,
-        itemBuilder: (context, index) {
-          final post = posts[index];
-          return Card(
-            child: ListTile(
-              onTap: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) => PostDetailScreen(post: post)));
-              },
-              leading: CircleAvatar(
-                backgroundImage: AssetImage(post.imageUrl),
-                radius: 24,
-              ),
-              title: Text(post.content),
-              subtitle: Text("Posted by ${post.author} - ${post.timestamp}"),
-            ),
-          );
-        },
+      floatingActionButton: FloatingActionButton(
+        onPressed: _togglePostBar,
+        tooltip: 'Post',
+        child: Icon(Icons.edit),
+        backgroundColor: Colors.blue,
       ),
-    );
-  }
-}
-
-class PostDetailScreen extends StatelessWidget {
-  final Post post;
-
-  const PostDetailScreen({Key? key, required this.post}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    const contentTextStyle = TextStyle(fontSize: 20);
-    return Scaffold(
-      appBar: AppBar(title: const Text("Post Details")),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Image.asset(post.imageUrl),
-            const SizedBox(height: 8),
-            Text(post.content, style: contentTextStyle),
-            const SizedBox(height: 8),
-            Text("Posted by ${post.author} - ${post.timestamp}"),
-          ],
-        ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: 'Home',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.search),
+            label: 'Search',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.account_circle),
+            label: 'Profile',
+          ),
+        ],
+        currentIndex: _selectedIndex,
+        selectedItemColor: Colors.blue,
+        onTap: _onItemTapped,
       ),
     );
   }
 }
-
-

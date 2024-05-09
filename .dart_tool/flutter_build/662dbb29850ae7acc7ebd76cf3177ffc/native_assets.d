@@ -1,0 +1,1 @@
+ /Users/j.mrles/Desktop/Vista-Mobile-App-1/.dart_tool/flutter_build/662dbb29850ae7acc7ebd76cf3177ffc/native_assets.yaml: 

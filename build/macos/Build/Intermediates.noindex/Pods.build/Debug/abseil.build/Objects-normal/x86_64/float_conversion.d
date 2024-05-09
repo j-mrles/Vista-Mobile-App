@@ -1,0 +1,42 @@
+dependencies: \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/abseil/absl/strings/internal/str_format/float_conversion.cc \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/Target\ Support\ Files/abseil/abseil-prefix.pch \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/abseil/absl/strings/internal/str_format/float_conversion.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/abseil/absl/strings/internal/str_format/extension.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/abseil/absl/base/config.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/abseil/absl/base/options.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/abseil/absl/base/policy_checks.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/abseil/absl/strings/internal/str_format/output.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/abseil/absl/base/port.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/abseil/absl/base/attributes.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/abseil/absl/base/optimization.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/abseil/absl/strings/string_view.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/abseil/absl/base/nullability.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/abseil/absl/base/internal/nullability_impl.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/abseil/absl/meta/type_traits.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/abseil/absl/base/internal/throw_delegate.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/abseil/absl/base/macros.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/abseil/absl/functional/function_ref.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/abseil/absl/functional/internal/function_ref.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/abseil/absl/base/internal/invoke.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/abseil/absl/functional/any_invocable.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/abseil/absl/functional/internal/any_invocable.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/abseil/absl/utility/utility.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/abseil/absl/base/internal/inline_variable.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/abseil/absl/base/internal/identity.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/abseil/absl/numeric/bits.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/abseil/absl/numeric/internal/bits.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/abseil/absl/numeric/int128.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/abseil/absl/numeric/int128_have_intrinsic.inc \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/abseil/absl/numeric/internal/representation.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/abseil/absl/strings/numbers.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/abseil/absl/base/internal/endian.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/abseil/absl/base/casts.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/abseil/absl/base/internal/unaligned_access.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/abseil/absl/types/optional.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/abseil/absl/types/bad_optional_access.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/abseil/absl/types/internal/optional.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/abseil/absl/memory/memory.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/abseil/absl/types/span.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/abseil/absl/types/internal/span.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/abseil/absl/algorithm/algorithm.h

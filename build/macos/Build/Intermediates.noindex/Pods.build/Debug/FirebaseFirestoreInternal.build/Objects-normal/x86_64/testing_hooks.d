@@ -1,0 +1,34 @@
+dependencies: \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/FirebaseFirestoreInternal/Firestore/core/src/util/testing_hooks.cc \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/FirebaseFirestoreInternal/Firestore/core/src/util/testing_hooks.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/FirebaseFirestoreInternal/Firestore/core/src/api/listener_registration.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/FirebaseFirestoreInternal/Firestore/core/src/remote/bloom_filter.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/FirebaseFirestoreInternal/Firestore/core/src/nanopb/byte_string.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/nanopb/pb.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/FirebaseFirestoreInternal/Firestore/core/src/util/comparison.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/meta/type_traits.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/attributes.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/config.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/options.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/policy_checks.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/strings/string_view.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/nullability.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/internal/nullability_impl.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/internal/throw_delegate.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/macros.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/optimization.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/port.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/FirebaseFirestoreInternal/Firestore/core/src/util/statusor.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/FirebaseFirestoreInternal/Firestore/core/include/firebase/firestore/firestore_errors.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/FirebaseFirestoreInternal/Firestore/core/src/util/status.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/FirebaseFirestoreInternal/Firestore/core/src/util/status_fwd.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/FirebaseFirestoreInternal/Firestore/core/src/util/statusor_internals.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/macos/Pods/FirebaseFirestoreInternal/Firestore/core/src/util/no_destructor.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/types/optional.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/utility/utility.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/internal/inline_variable.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/internal/identity.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/base/internal/invoke.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/types/bad_optional_access.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/types/internal/optional.h \
+  /Users/j.mrles/Desktop/Vista-Mobile-App-1/build/macos/Build/Products/Debug/abseil/absl.framework/Headers/memory/memory.h
